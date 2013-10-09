@@ -1,14 +1,13 @@
 # Routes
-# This file defines all application routes (Higher priority routes first)
-# ~~~~
+# при открытии сайта по адресу "/" вызывать метод index() контроллера Application 
 
 # Home page
 GET     /                                       Application.index
 
-# Ignore favicon requests
+# Игнорировать запросы браузера по адресу /favicon.ico (выдавать 404 ошибку)
 GET     /favicon.ico                            404
 
-# Map static resources from the /app/public folder to the /public path
+# Автоматически подключать все файлы по адресу /public/ для папки public, отдавать их статически.
 GET     /public/                                staticDir:public
 
 # Catch all

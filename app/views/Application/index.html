@@ -1,4 +1,19 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-<h1>A blog will be here</h1>
+<form method="get" action="@{Application.index}">
+	<input type="hidden" name="isPost" value="1">
+	
+	<label>Value:</label>
+	
+	<div>
+	<input type="text" name="value">
+	<button> Send</button>
+	</div>
+</form>
+
+<div>
+	<hr>
+	<b>Saved Value</b>:
+	<pre>${myVar}</pre>
+</div>
