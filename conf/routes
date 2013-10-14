@@ -12,3 +12,14 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+# IMPORT CRUD ROUTES
+* /admin										module:crud
+
+#IMPORT SECURE ROUTES
+* /													module:secure
+
+
+#Administration
+GET		/admin/?							Admin.index
+*			/admin								module:crud
