@@ -2,7 +2,7 @@
 # при открытии сайта по адресу "/" вызывать метод index() контроллера Application 
 
 # Home page
-GET     /                                       Application.index
+GET     /                                       admin.index
 
 # Игнорировать запросы браузера по адресу /favicon.ico (выдавать 404 ошибку)
 GET     /favicon.ico                            404

@@ -16,8 +16,17 @@ public class Application extends Controller {
         ).from(1).fetch(10);
         render(frontPost, olderPosts);
     }
- }
+ 
+@Before
+static void addDefaults() {
+    renderArgs.put("blogTitle", Play.configuration.getProperty("blog.title"));
+    renderArgs.put("blogBaseline", Play.configuration.getProperty("blog.baseline"));
+}
 
+public static void show(Long id) {
+    Post post = Post.findById(id);
+    render(post);
+}}
 
 /*package controllers;
 

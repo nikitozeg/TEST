@@ -1,47 +1,35 @@
 # Test data
 
-User(bob):
-    email:          bob@gmail.com
-    password:       secret
-    fullname:       Bob
+User(anna):
+    email:          anna@mail.ru
+    password:       123
+    fullname:       Anna
     isAdmin:        true
     
-User(jeff):
-    email:          jeff@gmail.com
-    password:       secret
-    fullname:       Jeff    
+User(nik):
+    email:          nik@ya.ru
+    password:       1234
+    fullname:       Nikita
+    isAdmin:        true
     
-Post(firstBobPost):
-    title:          About the model layer
-    postedAt:       2009-06-14
-    author:         bob
+User(andrew):
+    email:          andrew@gmail.com
+    password:       passw
+    fullname:       Andrew
+    
+Post(firstnikPost):
+    title:          Introducing myself
+    postedAt:       2013-10-10
+    author:         nik
     content:        >
-                    The model has a central position in a Play! application. It is the domain-specific 
-                    representation of the information on which the application operates.
-                    
-                    Martin fowler defines it as:
-                        
-                    Responsible for representing concepts of the business, information about the 
-                    business situation, and business rules. State that reflects the business situation 
-                    is controlled and used here, even though the technical details of storing it are 
-                    delegated to the infrastructure. This layer is the heart of business software.
+                    Hello! My name is Ivanov Nikita Albertovich. I born at Yoshkar-Ola city, which is located in the central part of Russia. It’s small town, only 0,3 million people lives there. But my town isn’t far from the Kazan, the biggest city in our region, which hosted Universiade 2013.
 
-Post(secondBobPost):
-    title:          Just a test of YABE
-    postedAt:       2009-03-25
-    author:         bob
+Post(secondnikPost):
+    title:          Just a test of itmo
+    postedAt:       2013-10-10
+    author:         nik
     content:        >
                     Well, it's just a test.
                     
-Post(jeffPost):
-    title:          The MVC application
-    postedAt:       2009-06-06
-    author:         jeff
-    content:        >
-                    A Play! application follows the MVC architectural pattern as applied to the 
-                    architecture of the Web.
-                    
-                    This pattern splits the application into separate layers: the Presentation 
-                    layer and the Model layer. The Presentation layer is further split into a 
-                    View and a Controller layer.
+
                     
