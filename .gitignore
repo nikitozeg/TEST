@@ -1,5 +1,10 @@
-/tmp
-/modules
-/lib
-/test-result
-/logs
+trash/
+bin/
+data/
+db/
+dist/
+logs/
+test-result/
+lib/
+tmp/
+modules/

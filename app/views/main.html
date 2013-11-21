@@ -1,42 +1,43 @@
 <!DOCTYPE html >
 <html>
-    <head>
-        <title>#{get 'title' /}</title>		
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="stylesheet" type="text/css" media="screen" 
-            href="@{'/public/stylesheets/main.css'}" />
-        <link rel="shortcut icon" type="image/png" 
-            href="@{'/public/images/favicon.png'}" />
-    </head>
-    <body>
-        
-        <div id="header">
-            <div id="logo">
-               ITMO social network
-            </div>
-            <ul id="tools">
-                <li>
-                    <a href="@{Admin.index()}">Log in to wriste something</a>
-					 <a href="@{Secure.logout()}">Log out</a>
-					${frontPost.author.fullname}
-                </li>
-            </ul>
-            <div id="title">
-                <span class="about">About this blog</span>
-                <h1><a href="#">${blogTitle}</a></h1>
-                <h2>${blogBaseline}</h2>
-            </div>
+
+<head>
+    <title>#{get 'title' /}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}" />
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">
+            ITMO social network
         </div>
-        
-        <div id="main">
-            #{doLayout /} 
+        <ul id="tools">
+            <li>
+                <a href="@{Admin.index()}">Log in to wriste something</a>
+                <a href="@{Secure.logout()}">Log out</a>
+                ${frontPost.author.fullname}
+            </li>
+        </ul>
+        <div id="title">
+            <span class="about">About this blog</span>
+            <h1><a href="#">${blogTitle}</a></h1>
+            <h2>${blogBaseline}</h2>
         </div>
-        
-        <p id="footer">
-            NikitoZ production using 
-            <a href="http://www.playframework.org">Play framework</a>
-           
-        </p>
-        
-    </body>
+    </div>
+
+    <div id="main">
+        #{doLayout /}
+    </div>
+
+    <p id="footer">
+        NikitoZ production using
+        <a href="http://www.playframework.org">Play framework</a>
+
+    </p>
+
+</body>
+
 </html>
